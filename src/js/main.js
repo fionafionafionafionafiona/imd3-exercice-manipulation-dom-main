@@ -18,6 +18,20 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".basic").classList.add("premium", "deluxe");
     document.querySelector(".reheated").classList.remove("cold");
     document.querySelector(".reheated").classList.add("hot");
+    document
+      .querySelector("#pizza-resize")
+      .classList.replace("regular-size", "large-size");
+    document
+      .querySelector("#veggie-pizza")
+      .classList.remove("unfinished", "raw");
+    document.querySelector("#veggie-pizza").classList.add("ready");
+    document.querySelector('[data-type="special"]').classList.toggle("glowing");
+    document
+      .querySelector('[data-type="special"]')
+      .classList.toggle("animated");
+    document.querySelector("#final-pizza").classList.remove("boring");
+    document.querySelector("#final-pizza").classList.add("amazing");
+    document.querySelector("#final-pizza").classList.toggle("featured");
   }
 
   if (exercice3) {
@@ -97,7 +111,5 @@ document.addEventListener("DOMContentLoaded", function () {
         exercice312.classList.remove("highlight");
       }
     });
-
-    //fin
   }
 });
